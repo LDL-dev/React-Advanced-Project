@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ignacio Doe",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Bennett",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "createdBy": 1,
+      "title": "Trampoline party",
+      "description": "Bounce around with your friends",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "categoryIds": [
+        2
+      ],
+      "location": "My back yard",
+      "startTime": "2023-03-10T18:00",
+      "endTime": "2023-03-10T17:00:00.000Z"
+    },
+    {
+      "title": "Laser Tag mania",
+      "description": "Let's play laser tag!",
+      "categoryIds": [
+        2
+      ],
+      "image": "https://www.ctvnews.ca/polopoly_fs/1.5118552.1600965663!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg",
+      "location": "Blinded by the Lights Laser Tag, 15 Main St.",
+      "startTime": "2023-04-06T18:46:00.000Z",
+      "endTime": "2023-04-06T17:46:00.000Z",
+      "createdBy": 1,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "createdBy": 2,
+      "title": "Badminton game",
+      "description": "Hit that shuttle!",
+      "image": "https://s3.eu-west-2.amazonaws.com/ws-activestirling/production/Badminton/_1200x630_crop_center-center_none/Badminton-3.jpg",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "location": "The Park",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "createdBy": 2,
+      "title": "Yoga",
+      "description": "It's a bit of a stretch.",
+      "image": "https://ymcasouthflorida.org/wp-content/uploads/2019/12/AA2I8910-scaled.jpg",
+      "categoryIds": [
+        3
+      ],
+      "location": "Shavasana Yoga School",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z"
+    },
+    {
+      "title": "Fierljeppen",
+      "description": "Gezellig, een dagje polsstokverspringen! ",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "image": "https://www.immaterieelerfgoed.nl/image/2018/7/6/persarchief_2017_pbh_3.jpg%28mediaclass-aside-media.d1945e1db36c5d9e6480e646070e0c8c992549a1%29.jpg",
+      "location": "Franeker, Fryslan",
+      "startTime": "2023-12-21T12:00:00.000Z",
+      "endTime": "2023-12-21T16:00:00.000Z",
+      "createdBy": 1,
+      "id": 5
+    },
+    {
+      "title": "Tobbedansen",
+      "description": "Leuk, tobbedansen!",
+      "categoryIds": [
+        1,
+        2,
+        3
+      ],
+      "image": "https://www.leermens.net/wp-content/uploads/tobbe2.jpg",
+      "location": "Ter zee",
+      "startTime": "2024-03-01T10:00:00.000Z",
+      "endTime": "2024-03-01T17:00:00.000Z",
+      "createdBy": 2,
+      "id": 6
+    },
+    {
+      "title": "Apekooi voor volwassenen",
+      "description": "Laat het kind in je los!",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "image": "https://afbeelding.dvhn.nl/dvhn/drenthe/au7h92-B881270556Z.1_20180710173358_000G5LVVMU2.1-0.jpg/alternates/LANDSCAPE_960/B881270556Z.1_20180710173358_000%2BG5LVVMU2.1-0.jpg",
+      "location": "Apekooi-complex \"De grote gymzaal\"",
+      "startTime": "2024-02-14T12:30:00.000Z",
+      "endTime": "2024-02-14T14:00:00.000Z",
+      "createdBy": 2,
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "name": "sports",
+      "id": 1
+    },
+    {
+      "name": "games",
+      "id": 2
+    },
+    {
+      "name": "relaxation",
+      "id": 3
+    }
+  ]
+}
