@@ -24,11 +24,12 @@ import {
 } from '@chakra-ui/react';
 import { NotFound } from './NotFound';
 import { EventForm } from '../components/EventForm';
+import { API_URL } from '../main';
 
 export const eventLoader = async () => {
-  const usersResponse = await fetch('http://localhost:3000/users');
-  const eventsResponse = await fetch('http://localhost:3000/events');
-  const categoriesResponse = await fetch('http://localhost:3000/categories');
+  const usersResponse = await fetch(API_URL + '/users');
+  const eventsResponse = await fetch(API_URL + '/events');
+  const categoriesResponse = await fetch(API_URL + '/categories');
   const users = await usersResponse.json();
   const events = await eventsResponse.json();
   const categories = await categoriesResponse.json();
@@ -44,10 +45,9 @@ export const Event = () => {
 
   const deleteEvent = async eventId => {
     if (confirm('Are you sure you want to delete this event?')) {
-      const eventResponse = await fetch(
-        'http://localhost:3000/events/' + eventId,
-        { method: 'DELETE' }
-      );
+      const eventResponse = await fetch(API_URL + '/events/' + eventId, {
+        method: 'DELETE'
+      });
       if (eventResponse.ok) {
         alert('The event was successfully deleted!');
         navigate(`/`);

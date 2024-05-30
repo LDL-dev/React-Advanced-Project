@@ -12,11 +12,12 @@ import {
   Textarea
 } from '@chakra-ui/react';
 import { Form, useParams, useLoaderData, Link } from 'react-router-dom';
+import { API_URL } from '../main';
 
 export const eventFormLoader = async () => {
-  const usersResponse = await fetch('http://localhost:3000/users');
-  const eventsResponse = await fetch('http://localhost:3000/events');
-  const categoriesResponse = await fetch('http://localhost:3000/categories');
+  const usersResponse = await fetch(API_URL + '/users/');
+  const eventsResponse = await fetch(API_URL + '/events');
+  const categoriesResponse = await fetch(API_URL + '/categories');
   const users = await usersResponse.json();
   const events = await eventsResponse.json();
   const categories = await categoriesResponse.json();
@@ -33,12 +34,12 @@ export const actionHandleSubmit = async ({ request, params }) => {
   if (params.eventId) {                                               // if the path contains an eventId,
     fetchOptions = {                                                  // we are editing an event; 
       method: 'PUT',
-      url: 'http://localhost:3000/events/' + params.eventId
+      url: API_URL + '/events/' + params.eventId
     };
   } else {                                                            // else, we are adding a new event
     fetchOptions = {
       method: 'POST',
-      url: 'http://localhost:3000/events'
+      url: API_URL + '/events'
     };
   }
 

@@ -13,6 +13,11 @@ import {
 } from './components/EventForm';
 import { ErrorBoundary } from './components/ErrorBoundary';
 
+export const API_URL =
+  //  'https://my-json-server.typicode.com/LDL-dev/events-db.json';
+  'https://json-server-mock-api-fx94.onrender.com';
+// hhttp://localhost:3000
+
 const router = createBrowserRouter([
   {
     path: '/',

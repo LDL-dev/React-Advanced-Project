@@ -4,11 +4,12 @@ import { SearchBar } from '../components/SearchBar';
 import { SearchFilter } from '../components/SearchFilter';
 import { ShowEvents } from '../components/ShowEvents';
 import { useLoaderData } from 'react-router-dom';
+import { API_URL } from '../main';
 
 export const eventsLoader = async () => {
-  const usersResponse = await fetch('http://localhost:3000/users');
-  const eventsResponse = await fetch('http://localhost:3000/events');
-  const categoriesResponse = await fetch('http://localhost:3000/categories');
+  const usersResponse = await fetch(API_URL + '/users');
+  const eventsResponse = await fetch(API_URL + '/events');
+  const categoriesResponse = await fetch(API_URL + '/categories');
   const users = await usersResponse.json();
   const events = await eventsResponse.json();
   const categories = await categoriesResponse.json();
