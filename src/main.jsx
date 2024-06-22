@@ -15,7 +15,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 
 export const API_URL =
   //  'https://my-json-server.typicode.com/LDL-dev/events-db.json';
-  'https://json-server-mock-api-fx94.onrender.com';
+  'https://json-server-mock-api-jvzt.onrender.com/';
 // hhttp://localhost:3000
 
 const router = createBrowserRouter([
